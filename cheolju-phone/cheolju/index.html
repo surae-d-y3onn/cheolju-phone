@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>철주의 휴대폰</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="phone">
+    <section id="startScreen" class="screen active start-screen">
+      <div class="start-content">
+        <h1>철주의 휴대폰</h1>
+        <p>화면을 클릭하세요</p>
+      </div>
+    </section>
+
+    <section id="quizScreen" class="screen quiz-screen">
+      <div class="status-bar dark"><span>11:47</span><span>● ● ●</span></div>
+      <div class="quiz-content">
+        <h2>잠금 해제</h2>
+        <p class="subtext">문제를 풀어 비밀번호를 입력하세요.</p>
+        <div class="quiz-image-wrap">
+          <img src="images/Q_숫자야구.png" alt="숫자야구 퀴즈" class="quiz-image">
+        </div>
+        <form id="quizForm" autocomplete="off">
+          <input id="answerInput" type="text" placeholder="정답 입력" aria-label="퀴즈 정답">
+          <button type="submit">확인</button>
+        </form>
+        <p id="quizMessage" class="quiz-message" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="homeScreen" class="screen home-screen">
+      <div class="status-bar light"><span>11:47</span><span>● ● ●</span></div>
+      <div class="home-title">철주의 휴대폰</div>
+      <div class="apps">
+        <button id="communityApp" class="app" type="button">
+          <span class="app-icon community-icon" aria-hidden="true">👥</span>
+          <span class="app-name">커뮤니티</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="viewerScreen" class="screen viewer-screen">
+      <div class="viewer-header">
+        <button id="backButton" class="back-button" type="button">‹</button>
+        <strong>커뮤니티</strong>
+        <span></span>
+      </div>
+      <div class="image-viewer">
+        <img src="images/철주의 휴대폰_커뮤니티.png" alt="철주의 휴대폰 커뮤니티" class="viewer-image">
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
